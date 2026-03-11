@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Nathan Castillo — Photo & Video Specialist</title>
+  <title>Digital Narrative — Photo & Video Specialist</title>
   <meta name="description"
     content="Portfolio of Daniel Nathan Castillo — a Photo & Video Specialist based in Metro Manila, Philippines. Specializing in cinematic storytelling, weddings, corporate events, web series, and films.">
   <meta name="keywords"
@@ -35,8 +35,8 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#contact" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.75rem;">Get In Touch</a>
         </li>
       </ul>
@@ -302,6 +302,21 @@
     </div>
   </section>
 
+  <!-- ========== GALLERY ========== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Visuals</span>
+        <h2 class="section-title">Photo & Video Gallery</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="gallery-grid" id="driveGallery">
+        <!-- Native images and videos will be injected here via script.js -->
+      </div>
+    </div>
+  </section>
+
   <!-- ========== SKILLS ========== -->
   <section class="section skills" id="skills">
     <div class="container">
@@ -359,51 +374,6 @@
           <span class="skill-icon">📢</span>
           <h4>Visual Storytelling</h4>
           <p>Crafting compelling narratives through visual media that connect with audiences on an emotional level.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EDUCATION ========== -->
-  <section class="section" id="education">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Academic Background</span>
-        <h2 class="section-title">Education</h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="education-list">
-
-        <div class="education-item reveal">
-          <div class="education-year">
-            <span>2015 – 2020</span>
-          </div>
-          <div class="education-info">
-            <h4>Bachelor of Science in Digital Animation</h4>
-            <p class="degree">BS Digital Animation</p>
-            <p class="school">University of the East</p>
-          </div>
-        </div>
-
-        <div class="education-item reveal reveal-delay-1">
-          <div class="education-year">
-            <span>2013 – 2015</span>
-          </div>
-          <div class="education-info">
-            <h4>High School</h4>
-            <p class="school">Jesu-Mariae International School</p>
-          </div>
-        </div>
-
-        <div class="education-item reveal reveal-delay-2">
-          <div class="education-year">
-            <span>2011 – 2013</span>
-          </div>
-          <div class="education-info">
-            <h4>High School</h4>
-            <p class="school">South Merville School</p>
-          </div>
         </div>
 
       </div>
@@ -493,20 +463,7 @@
                 <p class="value"><a href="mailto:DanielNathan.Main@gmail.com">DanielNathan.Main@gmail.com</a></p>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">📱</div>
-              <div>
-                <p class="label">Phone</p>
-                <p class="value"><a href="tel:+639260539527">+63 926 053 9527</a></p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">📍</div>
-              <div>
-                <p class="label">Location</p>
-                <p class="value">248 Aldrin St, Moonwalk Village,<br>Parañaque City, Metro Manila, PH</p>
-              </div>
-            </div>
+
             <div class="contact-item">
               <div class="contact-item-icon">🌐</div>
               <div>
@@ -518,6 +475,9 @@
           </div>
         </div>
         <form class="contact-form reveal reveal-delay-2" id="contactForm">
+          <!-- Web3Forms Access Key: Replace with your free key from web3forms.com -->
+          <input type="hidden" name="access_key" value="e4f6d6da-7132-418d-a888-be70cc1e8102">
+
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name</label>
@@ -577,6 +537,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- ========== AI CHATBOT (BOTPRESS - FREE TIER) ========== -->
+  <!-- 
+    To activate the AI chatbot:
+    1. Sign up for free at https://botpress.com
+    2. Create a new Assistant and add your portfolio details to its Knowledge Base
+    3. Click "Integrations" -> "Webchat" -> "Pre-configured" and copy the two <script> tags.
+    4. Paste them here to replace these comments:
+    
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/YOUR_BOT_ID/webchat/v2.2/config.js"></script>
+  -->
+  <script src="https://cdn.botpress.cloud/desk/webchat/v4.0/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2026/03/11/07/20260311071424-UEQNJRRC.js" defer></script>
 
   <script src="script.js"></script>
 </body>

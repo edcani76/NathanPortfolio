@@ -731,6 +731,64 @@ ul { list-style: none; }
 }
 
 /* ============================================
+   GALLERY SECTION
+   ============================================ */
+.gallery {
+  background: var(--bg-primary);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.gallery-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-card);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-item iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(10, 10, 10, 0.7) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+.gallery-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ============================================
    SKILLS SECTION
    ============================================ */
 .skills {

@@ -134,19 +134,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---- Contact Form Handler ----
+    // ---- Contact Form Handler (Web3Forms) ----
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const btn = contactForm.querySelector('.btn');
         const originalText = btn.textContent;
-        btn.textContent = 'Message Sent! ✓';
-        btn.style.background = '#28a745';
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+
+            if (data.success) {
+                btn.textContent = 'Message Sent! ✓';
+                btn.style.background = '#28a745';
+                btn.style.color = '#fff';
+                contactForm.reset();
+            } else {
+                btn.textContent = 'Error Sending';
+                btn.style.background = '#dc3545';
+                btn.style.color = '#fff';
+            }
+        } catch (error) {
+            btn.textContent = 'Error Sending';
+            btn.style.background = '#dc3545';
+            btn.style.color = '#fff';
+        }
+
         setTimeout(() => {
             btn.textContent = originalText;
             btn.style.background = '';
-            contactForm.reset();
-        }, 3000);
+            btn.style.color = '';
+            btn.disabled = false;
+        }, 4000);
     });
 
     // ---- Parallax on Hero Background ----
@@ -177,5 +204,54 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.transform = '';
         });
     });
+
+    // ---- Native Google Drive Gallery Integration ----
+    const driveGalleryContainer = document.getElementById('driveGallery');
+
+    // Replace these placeholder IDs with the actual Google Drive File IDs you want to display.
+    // Ensure the files are set to "Anyone with the link can view".
+    const driveMediaItems = [
+        { type: 'image', id: '1V3Pe4MhGow3Bf9EqEIP8RZ4szG76uU2h' },
+        { type: 'image', id: '1ybu7NeMKiPUzAxR1qyS9-mKbbJAbwjZs' },
+        { type: 'image', id: '1rrHeDi-652V8binCAhGuBVFUfW881UyQ' },
+        { type: 'video', id: '1-39b-LOoCf2gKe5dBoOpGh7gVyoD5rdg' }, // Example Image ID
+        { type: 'video', id: '13uPaedtAV8JDZDfhTInRvipbO7eUmwge' }, // Example Video ID
+        { type: 'video', id: '1n5gfANJ0F1aL8ARauDEKaz3V7Yro4TQb' }
+    ];
+
+    if (driveGalleryContainer) {
+        driveMediaItems.forEach((item, index) => {
+            const galleryItemWrapper = document.createElement('div');
+            // Adding reveal animations matching the rest of the site
+            galleryItemWrapper.className = `gallery-item reveal ${index % 3 !== 0 ? 'reveal-delay-' + (index % 3) : ''}`;
+
+            if (item.type === 'image') {
+                const img = document.createElement('img');
+                // Use the Drive thumbnail/view URL format for direct image rendering
+                img.src = `https://drive.google.com/thumbnail?id=${item.id}&sz=w800`;
+                img.alt = `Portfolio Image ${index + 1}`;
+                img.loading = 'lazy';
+                galleryItemWrapper.appendChild(img);
+            } else if (item.type === 'video') {
+                const iframe = document.createElement('iframe');
+                // Use the standard Drive video preview embed URL
+                iframe.src = `https://drive.google.com/file/d/${item.id}/preview`;
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.border = 'none';
+                iframe.setAttribute('allowfullscreen', 'true');
+                galleryItemWrapper.appendChild(iframe);
+            }
+
+            driveGalleryContainer.appendChild(galleryItemWrapper);
+
+            // Trigger the intersection observer on the new dynamically added element
+            setTimeout(() => {
+                if (typeof revealObserver !== 'undefined' && revealObserver.observe) {
+                    revealObserver.observe(galleryItemWrapper);
+                }
+            }, 50);
+        });
+    }
 
 });

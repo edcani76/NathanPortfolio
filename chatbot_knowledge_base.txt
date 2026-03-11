@@ -1,0 +1,84 @@
+# AI Chatbot Knowledge Base
+This document contains all the information about Daniel Nathan Castillo to be used as training data for an AI Chatbot on the portfolio website. Upload this file to your chatbot's knowledge base (e.g., Botpress, Chatbase).
+
+---
+
+## 1. Identity & Overview
+- **Name:** Daniel Nathan Castillo
+- **Role/Title:** Photo & Video Specialist, Cinematographer, Video Editor, Photographer
+- **Tagline:** Cinematic Storytelling · Visual Media · Creative Direction
+- **Location:** Metro Manila, Philippines
+- **Birthday:** March 10
+- **Languages:** English, Tagalog
+- **Work Status:** Available for Work
+
+## 2. Professional Summary
+Daniel is a Photo & Video Specialist based in Metro Manila, Philippines, with a passion for transforming creative concepts into compelling visual narratives. With a Bachelor of Science in Digital Animation from the University of the East, he brings a unique blend of artistic vision and technical expertise.
+
+He has worked on high-fashion campaigns with Francis Libiran, government communications at DHSUD, and independent film productions with Oxin Films. He currently serves as a Cinematographer & Editor at Scrapestatic Studio, pushing creative boundaries across weddings, corporate events, web series, and feature films.
+
+## 3. Services & Skills
+- **Cinematography:** Cinematic camera work with expert framing, movement, and lighting for films, events, and commercial projects.
+- **Video Editing:** Post-production editing with professional color grading, transitions, and storytelling pacing.
+- **Photography:** Professional photography for events, portraits, fashion, and commercial brand campaigns.
+- **Weddings:** Capturing cherished moments with a cinematic and timeless approach.
+- **Corporate Events:** Full-service event coverage with professional photo and video documentation.
+- **Web Series & Films:** End-to-end production support for narrative content.
+- **Digital Animation:** Bringing a unique perspective to motion graphics and visual effects.
+- **Visual Storytelling:** Crafting compelling narratives that connect with audiences emotionally.
+
+## 4. Professional Experience
+- **Cinematographer & Editor @ Scrapestatic Studio** (2019 — Present)
+  Leading cinematic productions, crafting visual content that tells powerful stories across diverse media.
+- **Multimedia Specialist @ Francis Libiran** (2022 — 2024)
+  Created cinematic photo and video content to elevate brand identity and support fashion campaigns.
+- **Media Content Manager @ Pinuno Partylist** (2021 — 2022)
+  Managed media strategy and produced content for advocacy campaigns and public communication.
+- **Online Content Specialist @ Dept. of Human Settlements & Urban Development (DHSUD)** (2020 — 2021)
+  Handled content planning and digital publishing to communicate housing and urban development initiatives.
+
+## 5. Featured Projects
+- **Sereno Web Series (2025):** Cinematography and editing for Oxin Films.
+- **Miss Universe Philippines Laguna (2025):** Official photo and event coverage + Highlights reel.
+- **100 Years of Del Monte (2025):** Produced centennial commercial campaign visuals.
+- **My Day Web Series (2020):** Photo and video production for Oxin Films.
+- **Nutriasia (2019):** Created commercial photo and video content detailing product storytelling.
+
+## 6. Education
+- **University of the East (2015 – 2020):** Bachelor of Science in Digital Animation
+- **Jesu-Mariae International School (2013 – 2015):** High School
+- **South Merville School (2011 – 2013):** High School
+
+## 7. Contact Information
+- **Email:** DanielNathan.Main@gmail.com
+- **Website:** https://digitalnarrative.ph
+- **Google Drive Full Gallery:** https://drive.google.com/drive/folders/1Kjf91ZmVPtR1VguUEy1slPD4Rj5ukxQa?usp=drive_link
+
+## 8. Social Platforms / Portfolios
+- **Vero:** https://vero.co/nateofficialph (Social portfolio)
+- **Pond5:** https://www.pond5.com/?ref=danielnathan49771 (Stock footage)
+- **Shutterstock:** https://www.shutterstock.com/g/nateofficialph (Stock photos)
+- **Pinterest:** https://pin.it/itsf0k5om (Visual boards)
+- **Wirestock:** https://wirestock.io/daniel.nathan.castillo (Visual marketplace)
+
+---
+
+## 9. Common Questions & Answers (FAQ for Bot)
+
+**Q: Where are you based? Can you travel?**
+A: I am based in Metro Manila, Philippines. I am available for work and can travel depending on the project requirements.
+
+**Q: What kind of video and photo services do you offer?**
+A: I specialize in Cinematography, Video Editing, and Photography. My main focus areas are Weddings, Corporate Events, Web Series & Films, and Commercials.
+
+**Q: Do you shoot weddings?**
+A: Yes! I provide cinematic and timeless coverage of weddings to capture your most cherished moments. 
+
+**Q: Can I see your past work?**
+A: Absolutely! You can find a gallery of my featured projects (like Miss Universe PH Laguna and the Sereno Web Series) on my website. You can also view my raw and full-resolution portfolio via my Google Drive: https://drive.google.com/drive/folders/1Kjf91ZmVPtR1VguUEy1slPD4Rj5ukxQa?usp=drive_link
+
+**Q: How do I book you or get a quote?**
+A: Please fill out the contact form on my website, or you can email me directly at DanielNathan.Main@gmail.com.
+
+**Q: What is your background and experience?**
+A: I hold a BS in Digital Animation from the University of the East. I currently work as a Cinematographer & Editor at Scrapestatic Studio. Previously, I've worked doing multimedia for Francis Libiran, Pinuno Partylist, and DHSUD.
